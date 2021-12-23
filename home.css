@@ -1,221 +1,223 @@
-#logo{
-    display: block;
-    margin-top: auto;
-    margin-bottom: auto;
-    flex: 1;
+#logo {
+  display: block;
+  margin-top: auto;
+  margin-bottom: auto;
+  flex: 1;
 }
 #logo img {
-    
-    width: 50px;
+    width: 120px;
+    padding: 10px;
 }
 
-body{
-    background-color: black;
-    color: white;
-    font-family: Georgia, 'Times New Roman', Times, serif ;
+body {
+  background-color: black;
+  color: white;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
-.head{
-    display: flex;
-    justify-content: space-between;
+.head {
+  display: flex;
+  justify-content: space-between;
 }
 
-.navigation{
-    display: flex;
-    gap: 5%;
-    flex: 2;
-    
+.navigation {
+  display: flex;
+  gap: 5%;
+  flex: 2;
 }
-ul{
-    list-style: none;
-
+ul {
+  list-style: none;
 }
-a{ 
-    text-decoration: none;
-    color: yellow;
+a {
+  text-decoration: none;
+  color: yellow;
 }
-.svg-num{
-    width: 150px;
-    display: flex;
-    color: rgb(0, 0, 0);
-    margin-right: 10px;
-    background-color: yellow;
-    font-weight: 500;
-    padding-left: 5px;
-    padding-right: 5px;
-    border-radius: 6px;
+.svg-num {
+  width: 150px;
+  display: flex;
+  color: rgb(0, 0, 0);
+  margin-right: 10px;
+  background-color: yellow;
+  font-weight: 500;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-radius: 6px;
 }
 .button {
-    border: yellow 2px solid;
-    color: yellow;
-    font-weight: 700;
-    border-radius: 6px;
-    width: 150px;   
-    padding: 1px;
-    margin: auto;
-    margin-top: 75px;
+  border: yellow 2px solid;
+  color: yellow;
+  font-weight: 700;
+  border-radius: 6px;
+  width: 150px;
+  padding: 1px;
+  margin: auto;
+  margin-top: 75px;
 }
 
-.svg-num img{
-    width: 15%;
-    margin-top: auto;
-    margin-bottom: auto;
-
+.svg-num img {
+  width: 15%;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 .annonce-txt {
-    /* margin-top: 75px;*/
-    /* padding: 25px;  */
-    /* text-align: justify; */
-    padding: 70px 0;
-    flex: 1;
-    
+  padding: 70px 0;
+  flex: 1;
 }
 
 .annonce {
-    display: flex;
-    margin-top: 75px;
-    padding: 25px;
-    /* justify-content: space-between;
-    gap: 20px; */
+  display: flex;
+  margin-top: 75px;
+  padding: 25px;
 }
 
 #nissan370Z {
-    flex: 1.5;
-    
+  flex: 1.5;
 }
 
-/* .separation {
-    display: flex;
-   
-} */
-
 #sep {
-    margin-bottom: 10px;
-    padding-left: 10px;
+  margin-bottom: 10px;
+  padding-left: 10px;
 }
 
 .hr {
-    border-top: 2px solid yellow;
+  border-top: 2px solid yellow;
 }
 
 .sevices {
-    margin: 2%;
-    display: flex;
-    margin-bottom: 50px;
-    /* flex-wrap: wrap; */
-
+  margin: 2%;
+  display: flex;
+  margin-bottom: 50px;
 }
 .serv {
-    padding-right: 5%;
-    padding-left: 5%;
-    text-align: center;
-    flex: 1;
+  padding-right: 5%;
+  padding-left: 5%;
+  text-align: center;
+  flex: 1;
 }
 h2 {
-    color: yellow;
+  color: yellow;
 }
 
 #mercedes {
-    width: 80%;
-    padding: 10%;
+  width: 80%;
+  padding: 10%;
 }
 
 .circle {
-    width: 120px;
-    height: 120px;
-    display: flex;
-    align-items: center ;
-    justify-content: center;
-
-    /* padding-top: 47px; */
-    /* line-height: 5px; */
-    border-radius: 50%;
-    font-weight: bolder;
-    font-size: 18px;
-    color: black;
-    text-align: center;
-    background: yellow;
-    
+  width: 120px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-weight: bolder;
+  font-size: 18px;
+  color: black;
+  text-align: center;
+  background: yellow;
 }
 .why-us {
-    margin: 2%;
-    display: flex;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    justify-content: space-evenly;
+  margin: 2%;
+  display: flex;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  justify-content: space-evenly;
 }
 
 .footer {
-    margin: 0px;
-    padding: 2%;
-    display: flex;
-    padding-bottom: 100px;
-    /* padding-left: 10%; */
-    justify-content: space-evenly;
-    font-weight: 600;
-    /* margin-bottom: 300px; */
-    
+  margin: 0px;
+  padding: 2%;
+  display: flex;
+  padding-bottom: 100px;
+  justify-content: space-evenly;
+  font-weight: 600;
 }
 
 .felement {
-    padding-right: 5%;
-    padding-left: 5%;
-    /* text-align: center; */
-    flex: 1;
+  padding-right: 5%;
+  padding-left: 5%;
+  flex: 1;
 }
 
 .about {
-    padding: 3%;
-    display: flex; 
-    align-items: center ;
-    justify-content: center; 
+  padding: 3%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .felement ul li a {
-    color: black;
+  color: black;
 }
 
 footer {
-    background-color: yellow;
-    color: black;
-
+  background-color: yellow;
+  color: black;
 }
 
+.dropbtn {
+    background-color: black;
+    width: 50px;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(61, 61, 61);
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    right: 0;
+  }
+  
+  .dropdown-content a {
+    color: yellow;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .show {
+    display: block;
+  }
+
 @media screen and (max-width: 600px) {
-    
-    #logo {
-        display: none;
-    }
-    .svg-num {
-        display: none;
-    }
-    .navigation {
-        justify-content: center;
-    }
-    
 
-    .sevices {
-        flex-direction: column;
-    }
+  .svg-num {
+    display: none;
+  }
+  .navigation {
+    display: none;
+  }
 
-    .why-us {
-        flex-direction: column;
-        align-items: center;
-    }
+  .sevices {
+    flex-direction: column;
+  }
 
-    .circle {
-        justify-content: center;
-        margin: 10px;
-    }
+  .why-us {
+    flex-direction: column;
+    align-items: center;
+  }
 
-    .footer {
-        flex-direction: column;
-    }
+  .circle {
+    justify-content: center;
+    margin: 10px;
+  }
 
-    .annonce {
-        flex-direction: column-reverse;
-    }
-    .felement {
-        padding-bottom: 20px;
-    }
+  .footer {
+    flex-direction: column;
+  }
 
+  .annonce {
+    flex-direction: column-reverse;
+  }
+  .felement {
+    padding-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 600px) {
+    .dropdown {
+      display: none;
+    }
   }

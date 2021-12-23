@@ -1,186 +1,161 @@
-#logo{
-    display: block;
-    margin-top: auto;
-    margin-bottom: auto;
-    flex: 1;
+#logo {
+  display: block;
+  margin-top: auto;
+  margin-bottom: auto;
+  flex: 1;
 }
 #logo img {
-    
-    width: 50px;
+  width: 120px;
+  padding: 10px;
+}   
+
+body {
+  background-image: url("img/car\ anonce.jpg");
+  object-fit: cover;
+  background-size: 100%;
+  background-color: black;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: white;
 }
 
-body{
-    
-    
-    background-image: url("img/car\ anonce.jpg");
-    object-fit: cover;
-    background-size: 100%;
-    background-color: black;
-    font-family: Georgia, 'Times New Roman', Times, serif ;
-    color: white;
+.head {
+  display: flex;
+  justify-content: space-between;
 }
 
-.head{
-    display: flex;
-    justify-content: space-between;
+.navigation {
+  display: flex;
+  gap: 5%;
+  flex: 2;
 }
 
-.navigation{
-    display: flex;
-    gap: 5%;
-    flex: 2;
+ul {
+  list-style: none;
 }
 
-ul{
-    list-style: none;
-
+a {
+  text-decoration: none;
+  color: yellow;
 }
 
-a{ 
-    text-decoration: none;
-    color: yellow;
-}
-
-.svg-num{
-    width: 150px;
-    display: flex;
-    color: rgb(0, 0, 0);
-    margin-right: 10px;
-    background-color: yellow;
-    font-weight: 500;
-    padding-left: 5px;
-    padding-right: 5px;
-    border-radius: 6px;
+.svg-num {
+  width: 150px;
+  display: flex;
+  color: rgb(0, 0, 0);
+  margin-right: 10px;
+  background-color: yellow;
+  font-weight: 500;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-radius: 6px;
 }
 
 .button {
-    border: yellow 2px solid;
-    color: yellow;
-    font-weight: 700;
-    border-radius: 6px;
-    width: 150px;   
-    padding: 1px;
-    margin: auto;
-    margin-top: 75px;
+  border: yellow 2px solid;
+  color: yellow;
+  font-weight: 700;
+  border-radius: 6px;
+  width: 150px;
+  padding: 1px;
+  margin: auto;
+  margin-top: 75px;
 }
 
-.svg-num img{
-    width: 15%;
-    margin-top: auto;
-    margin-bottom: auto;
+.svg-num img {
+  width: 15%;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .title {
-    margin: 5%;
-    font-size: 30px;
+  margin: 5%;
+  font-size: 30px;
 }
 
 .form {
-    margin: 3%;
+  margin: 3%;
 }
 section div form label {
-    color: yellow;
+  color: yellow;
 }
 
 input {
-    width: 330px;
-    height: 20px;
+  width: 330px;
+  height: 20px;
 }
 #msg {
-        height: 80px;
+  height: 80px;
 }
 
 .footer {
-    margin: 0px;
-    padding: 2%;
-    display: flex;
-    padding-bottom: 100px;
-    justify-content: space-evenly;
-    font-weight: 600;
-    
+  margin: 0px;
+  padding: 2%;
+  display: flex;
+  padding-bottom: 100px;
+  justify-content: space-evenly;
+  font-weight: 600;
 }
 
 .felement {
-    padding-right: 5%;
-    padding-left: 5%;
-    flex: 1;
+  padding-right: 5%;
+  padding-left: 5%;
+  flex: 1;
 }
 
-
-
 .felement ul li a {
-    color: black;
+  color: black;
 }
 
 footer {
-    background-color: yellow;
-    color: black;
+  background-color: yellow;
+  color: black;
 }
 
 .dropbtn {
-    background-color: #3498DB;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-  }
-  
-  .dropbtn:hover, .dropbtn:focus {
-    background-color: #2980B9;
-  }
-  
-  .dropdown {
-    position: relative;
-    display: inline-block;
-  }
-  
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f1f1f1;
-    min-width: 160px;
-    overflow: auto;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  
-  .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-  
-  .dropdown a:hover {background-color: #ddd;}
-  
-  .show {display: block;}
+  background-color: black;
+  width: 50px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgb(61, 61, 61);
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  right: 0;
+}
+
+.dropdown-content a {
+  color: yellow;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.show {
+  display: block;
+}
 
 @media screen and (max-width: 600px) {
-    input {
-        width: 85%;
-    }
+  input {
+    width: 85%;
+  }
 
-    #logo {
-        display: none;
-    }
-    .svg-num {
-        display: none;
-    }
-    .navigation {
-        justify-content: center;
-    }
-    .footer {
-        flex-direction: column;
-    }
-    
+  .svg-num {
+    display: none;
+  }
+  .navigation {
+    display: none;
+  }
+  .footer {
+    flex-direction: column;
+  }
 }
 
 @media screen and (min-width: 600px) {
-    .dropdown {
-        display: none;
-    }
+  .dropdown {
+    display: none;
+  }
 }
-
-
-

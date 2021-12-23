@@ -27,16 +27,6 @@ window.onclick = function(event) {
     }
   }
 }
-// document.addEventListener(
-//     "DOMContentLoaded", () => {
-//         new Mmenu( "#menu", {
-//             "slidingSubmenus": false,
-//            "extensions": [
-//                 "position-right",
-//                 "theme-dark"
-//             ]
-//         });
-//     }
-// );
+
         
 
