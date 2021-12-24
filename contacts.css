@@ -7,7 +7,7 @@
 #logo img {
   width: 120px;
   padding: 10px;
-}   
+}
 
 body {
   background-image: url("img/car\ anonce.jpg");
@@ -114,6 +114,7 @@ footer {
 .dropbtn {
   background-color: black;
   width: 50px;
+  padding: 0px;
 }
 
 .dropdown-content {
@@ -158,4 +159,20 @@ footer {
   .dropdown {
     display: none;
   }
+}
+
+.dropdown {
+  background-color: #000;
+}
+
+.dropdown button {
+  padding: 0;
+  background-color: transparent;
+  border: none;
+}
+
+ a:hover{
+    color: red;
+    transition: 0.3s ease-in-out;
+    text-decoration: underline;
 }
