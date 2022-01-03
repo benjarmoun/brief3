@@ -60,69 +60,10 @@ a {
   margin-top: auto;
   margin-bottom: auto;
 }
-.annonce-txt {
-  padding: 70px 0;
-  flex: 1;
-}
-
-.annonce {
-  display: flex;
-  margin-top: 75px;
-  padding: 25px;
-}
-
-#nissan370Z {
-  flex: 1.5;
-}
-
-#sep {
-  margin-bottom: 10px;
-  padding-left: 10px;
-}
-
-.hr {
-  border-top: 2px solid yellow;
-}
-
-.sevices {
-  margin: 2%;
-  display: flex;
-  margin-bottom: 50px;
-}
-.serv {
-  padding-right: 5%;
-  padding-left: 5%;
-  text-align: center;
-  flex: 1;
-}
-h2 {
-  color: yellow;
-}
-
-#mercedes {
-  width: 80%;
-  padding: 10%;
-}
-
-.circle {
-  width: 120px;
-  height: 120px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  font-weight: bolder;
-  font-size: 18px;
-  color: black;
-  text-align: center;
-  background: yellow;
-}
-.why-us {
-  margin: 2%;
-  display: flex;
-  margin-top: 50px;
-  margin-bottom: 50px;
-  justify-content: space-evenly;
+#title {
+    text-align: center; 
+    font-size: 40px; 
+    padding: 5%; 
 }
 
 .footer {
@@ -138,13 +79,6 @@ h2 {
   padding-right: 5%;
   padding-left: 5%;
   flex: 1;
-}
-
-.about {
-  padding: 3%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .felement ul li a {
@@ -179,8 +113,44 @@ footer {
   display: block;
 }
 
-.show {
-  display: block;
+.dropdown {
+  background-color: #000;
+}
+.dropdown button {
+  padding: 0;
+  background-color: transparent;
+  border: none;
+}
+a:hover {
+  color: red;
+  transition: 0.3s ease-in-out;
+  text-decoration: underline;
+}
+
+.galerie-container {
+  display: grid;
+  justify-content: space-evenly;
+  grid-template-columns: auto auto auto;
+  margin-bottom: 60px;
+}
+
+.galerie-element {
+  text-align: center;
+  margin: auto;
+  margin-bottom: 30px;
+  background-color: rgba(78, 64, 64, 0.363);
+  border-radius: 3px;
+}
+
+#img {
+  width: 350px;
+  border-radius: 3px;
+}
+
+@media screen and (min-width: 600px) {
+  .dropdown {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -191,49 +161,21 @@ footer {
     display: none;
   }
 
-  .sevices {
-    flex-direction: column;
-  }
-
-  .why-us {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .circle {
-    justify-content: center;
-    margin: 10px;
-  }
-
   .footer {
     flex-direction: column;
   }
 
-  .annonce {
-    flex-direction: column-reverse;
-  }
   .felement {
     padding-bottom: 20px;
   }
 }
-
-@media screen and (min-width: 600px) {
-  .dropdown {
-    display: none;
+@media screen and (max-width: 1100px) {
+  .galerie-container {
+    grid-template-columns: auto auto;
   }
-
- 
 }
- .dropdown {
-    background-color: #000;
-}
-  .dropdown button {
-    padding: 0;
-    background-color: transparent;
-    border: none;
-}
-a:hover{
-  color: red;
-  transition: 0.3s ease-in-out;
-  text-decoration: underline;
+@media screen and (max-width: 770px) {
+  .galerie-container {
+    grid-template-columns: auto;
+  }
 }

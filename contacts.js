@@ -6,12 +6,10 @@ function myFunction() {
     var subject = document.getElementById("subject").value;
     var msg = document.getElementById("msg").value;
 
-
-
     alert('FIRST NAME : ' + fname + "\r\n" + 'LAST NAME : ' + lname + "\r\n"+ 'E-MAIL : ' + mail + "\r\n"+ 'SUBJECT : ' + subject + "\r\n"+ 'MESSAGE : ' + msg);
 }
 
-function myFunction() {
+function Function() {
     document.getElementById("myDropdown").classList.toggle("show");
 }
 

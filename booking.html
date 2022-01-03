@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking</title>
+    <link rel="stylesheet" href="booking.css">
+    <link rel="shortcut icon" type="image/png" href="img/rent me logo.jpg">
+</head>
+
+<body>
+
+    <header class="head">
+
+        <div id="logo">
+            <a href="index.html"><img src="img/rent me logo.jpg" alt="" /></a>
+        </div>
+
+        <div class="dropdown">
+            <button onclick="myFunction()">
+              <img class="dropbtn" src="/img/menu-svgrepo-com 1.png" alt="" />
+            </button>
+            <div id="myDropdown" class="dropdown-content">
+              <a href="index.html">Acceuil</a>
+              <a href="galerie.html">Galerie</a>
+              <a href="booking.html">Booking</a>
+              <a href="contacts.html">Contact</a>
+            </div>
+        </div>
+
+        <nav class="navigation">
+            <ul class="navigation">
+                <li><a href="index.html">Acceuil</a></li>
+                <li><a href="galerie.html">Galerie</a></li>
+                <li><a href="booking.html">Booking</a></li>
+                <li><a href="contacts.html">Contacts</a></li>
+            </ul>
+        </nav>
+
+        <div class="svg-num">
+            <img src="img/phone.svg" alt="">
+            <p>+212-661-361234</p>
+        </div>
+
+    </header>
+    <section class="title">
+        <h1>BOOKING</h1>
+    </section>
+
+    <section style="padding: 2%; font-size: large;">
+
+        <div class="form">
+            <label for="">Vehicul Type: <br></label>
+            <select name="" id="slct1">
+                <option value="">choose a type</option>
+                
+            </select><br><br>
+            <label for="">Boite a Vitesse:<br></label>
+            <select name="" id="slct2"></select><br><br>
+            <label for="">Carburant:<br></label>
+            <select name="" id="slct3"></select>
+        </div>
+
+    </section>
+    <Script>
+        
+        let type = ["moto","citadine","compact","berline","utilitaire","engin de chantier","camion"];
+        let bav = ["manuelle","automatique"];
+        let carburant = ["electrique","hybride","essence","diesel"];
+
+        let slct1 = document.getElementById("slct1");
+        let slct2 = document.getElementById("slct2");
+        let slct3 = document.getElementById("slct3");
+
+        type.forEach(function addtype(item){
+            let option = document.createElement("option")
+            option.text = item;
+            option.value = item;
+            slct1.appendChild(option);
+        })
+        
+        slct1.onchange = function () {
+            slct2.innerHTML = "<option></option>";
+            if(this.value === "moto") {
+
+            }
+            if(this.value === "citadine") {
+                slct2.innerHTML = "<option>manuelle</option>";
+            }
+            if(this.value === "compact") {
+                slct2.innerHTML = "<option>manuelle</option>";
+            }
+            if(this.value === "berlin") {
+                slct2.innerHTML = "<option>auto</option>";
+            }
+            if(this.value === "utilitaire") {
+                slct2.innerHTML = "<option>manuelle</option>";
+            }
+            if(this.value === "engin de chantier") {
+                slct2.innerHTML = "<option>manuelle</option>";
+            }
+            if(this.value === "camion") {
+                slct2.innerHTML = "<option>automatique</option>";
+            }
+
+            slct3.innerHTML = "<option></option>";
+            if(this.value === "moto") {
+                slct3.innerHTML = "<option>electrique</option>";
+                slct3.innerHTML = "<option>essence</option>";
+            }
+            if(this.value === "citadine") {
+                slct3.innerHTML = "<option>electrique</option>";
+                slct3.innerHTML = "<option>essence</option>";
+                slct3.innerHTML = "<option>hybride</option>";
+                slct3.innerHTML = "<option>gasoile</option>";
+            }
+            if(this.value === "compact") {
+                slct3.innerHTML = "<option>essence</option>";
+                slct3.innerHTML = "<option>hybride</option>";
+                slct3.innerHTML = "<option>gasoile</option>";
+            }
+            if(this.value === "berlin") {
+                slct3.innerHTML = "<option>essence</option>";
+                slct3.innerHTML = "<option>hybride</option>";
+                slct3.innerHTML = "<option>gasoile</option>";
+            }
+            if(this.value === "utilitaire") {
+                slct3.innerHTML = "<option>gasoil</option>";
+            }
+            if(this.value === "engin de chantier") {
+                slct3.innerHTML = "<option>gasoil</option>";
+                slct3.innerHTML = "<option>essence</option>";
+            }
+            if(this.value === "camion") {
+                slct3.innerHTML = "<option>gasoil</option>";
+            }
+        }
+
+
+        function addtoslct2(arr) {
+            arr.forEach(function(item){
+                let option = document.createElement("option")
+                option.text = item;
+                option.value = item;
+                slct2.appendChild(option);
+            });
+        }
+
+    </Script>
+
+
+
+
+    <footer>
+        <section>
+            <div class="footer">
+                 
+                <div class="felement">
+                    <h1>RENT ME NOW</h1>
+                    <ul style="padding: 0ch;">
+                        <li><a href="index.html">HOME </a></li>
+                        <li><a href="galerie.html">GALERIE</a></li>
+                        <li><a href="booking.html">BOOKING</a></li>
+                        <li><a href="contacts.html">CONTACTS</a></li>
+                    </ul>
+                </div>
+
+                <div class="felement">
+                    <h1>CALL</h1>
+                    <ul style="padding: 0ch;">
+                        <li><p>+212-661-361234</p></li>
+                        <li><p>+212-661-364484</p></li>
+                        
+                    </ul>
+                </div>
+
+                <div class="felement">
+                    <h1>E-MAIL</h1>
+                    <ul style="padding: 0ch;">
+                        <li><a href="#">RentMeNow@gmail.com</a></li>
+                        <li><a href="#">RentMeNowSuuport@gmail.com</a></li>
+                    </ul>
+                </div>
+                <div class="felement">
+                    <h1>VISIT US</h1>
+                    <ul style="padding: 0ch;">
+                        <li><p>20299 SAFI <br>MOROCCO </p></li>
+                        
+                    </ul>
+                </div>
+                
+                
+
+
+            </div>
+        </section>
+    </footer>
+    <script src="home.js"></script>
+</body>
+</html>
