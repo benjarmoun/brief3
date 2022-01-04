@@ -147,6 +147,14 @@
   .show {
     display: block;
   }
+
+  p{
+      color: yellow;
+      font-size: xx-large;
+  }
+  .result {
+      display: flex;
+  }
   
   @media screen and (max-width: 600px) {
     input {

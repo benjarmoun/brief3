@@ -92,12 +92,11 @@ function addtoslct2(arr) {
 
 
   function myFunction() {
-    var ndays = document.getElementById("ndays").value;
-    var tp = document.getElementById("slct1").value;
-    console.log(tp);
+      var tp = document.getElementById("slct1").value;
+      console.log(tp);
     var crb = document.getElementById("slct3").value;
     var bv = document.getElementById("slct2").value;
-
+    
     if (tp === "moto") {
         typ = 10;
     } else
@@ -119,11 +118,11 @@ function addtoslct2(arr) {
     if (tp === "camion") {
         typ = 250;
     }
-
+    
     if (bv === "automatique") {
         boite = 19;
     }
-
+    
     if (crb === "electrique") {
         carbu = 5;
     }
@@ -137,9 +136,16 @@ function addtoslct2(arr) {
         carbu = 21;
     }
     
-    var prix = ndays * (typ + (typ * boite / 100) + (typ * carbu / 100));
-
-    alert("prix : " + prix + "\r\n" + 'ndays : ' + ndays + "\r\n"+ 'typ : ' + typ + "\r\n"+ 'carbu : ' + carbu);
+    
+    
+    
+}
+let form = document.querySelector('form');
+form.addEventListener('submit',e=>{
+    e.preventDefault();
+    let ndays = document.getElementById("ndays").value;
+    prix = ndays * (typ + (typ * boite / 100) + (typ * carbu / 100));
+    // alert("prix : " + prix + "\r\n" + 'ndays : ' + ndays + "\r\n"+ 'typ : ' + typ + "\r\n"+ 'carbu : ' + carbu);
     document.getElementById("demo").innerHTML = prix;
-  }
+})
   
