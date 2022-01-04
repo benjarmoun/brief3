@@ -66,6 +66,10 @@ a {
     padding: 5%; 
 }
 
+.show {
+    display: block;
+}
+
 .footer {
   margin: 0px;
   padding: 2%;

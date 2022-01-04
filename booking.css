@@ -87,6 +87,11 @@
     height: 20px;
 
   }
+  input {
+      
+    width: 330px;
+    height: 20px;
+  }
   #msg {
     height: 80px;
   }
@@ -145,6 +150,9 @@
   
   @media screen and (max-width: 600px) {
     input {
+      width: 85%;
+    }
+    select {
       width: 85%;
     }
   
