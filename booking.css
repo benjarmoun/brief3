@@ -76,7 +76,6 @@
   
   .form {
     margin: 7%;
-    /* margin-bottom: 7%; */
   }
   .form label {
     color: yellow;
@@ -148,12 +147,17 @@
     display: block;
   }
 
-  p{
+  .result p{
       color: yellow;
       font-size: xx-large;
   }
   .result {
       display: flex;
+  }
+  .booking {
+    padding: 2%; 
+    padding-top: 0px;
+    font-size: large;
   }
   
   @media screen and (max-width: 600px) {
